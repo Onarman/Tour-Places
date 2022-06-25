@@ -1,0 +1,22 @@
+@import "../../sass/_variables";
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    background-color: $Teal-and-Gray-5-hex;
+
+    a{
+       height: 10vh;
+        text-decoration: none;
+        font-size: 1rem;
+        color: $Teal-and-Gray-3-hex;
+        padding: 1.3rem;
+
+        &:hover{
+            background-color: $Teal-and-Gray-1-hex;
+        }
+    }
+
+    }
+    
