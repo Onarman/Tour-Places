@@ -1,8 +1,7 @@
-import Card from "./components/cards/Card";
 import Header from "./components/header/Header";
+import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
 import "./sass/App.scss";
-import data from "./helper/data";
 
 
 
@@ -11,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-      <Card />
+      <Main />
     </div>
   );
 }

@@ -1,4 +1,4 @@
- const data = [
+ export const data = [
     {
       id: 1,
       title: "New York",
@@ -93,4 +93,4 @@
     },
   ];
 
-  export default data;
+ 

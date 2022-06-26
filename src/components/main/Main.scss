@@ -1,0 +1,65 @@
+@import "../../sass/variables";
+
+img{
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+
+
+    &:hover{
+        filter: grayscale(100%);
+    }
+
+}
+
+.card-p{
+    width: 500px;
+    color: $Teal-and-Gray-3-hex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 1.2rem;
+    padding: 1rem;
+    transform: translateY(100%);
+    z-index: 1;
+    transition: transform 0.8s ease-in-out;
+    
+   
+
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+
+    .cards{
+        background-color: $Teal-and-Gray-5-hex;
+        color: $Teal-and-Gray-3-hex;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.7);
+        position: relative;
+        overflow: hidden;
+
+        &:hover .card-p{
+            transform: translateY(0%);
+
+        }
+
+
+        img{
+            border-radius: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .title{
+            color: $Teal-and-Gray-2-hex;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+    }
+}
