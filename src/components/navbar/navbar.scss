@@ -1,8 +1,11 @@
 @import "../../sass/_variables";
+@import "../../sass/mixins";
+
+
 .navbar{
     display: flex;
     justify-content: space-evenly;
-    height: 10vh;
+    
     background-color: $Teal-and-Gray-5-hex;
 
     a{
@@ -17,5 +20,18 @@
         }
     }
 
+    }
+
+    @include media-xsm{
+        .navbar{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    @include media-sm{
+        .navbar{
+            flex-direction: row;
+        }
     }
     
